@@ -1,0 +1,1334 @@
+2020-12-18 17:48:08,003 INFO org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
+2020-12-18 17:48:08,879 INFO org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=service-zuul-server, profiles=[default], label=null, version=7c7d0557ebf1f9fdcc32ba587d42925bba28d17d, state=null
+2020-12-18 17:48:08,880 INFO org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/batuzai25/config-microservicios.git/application.properties'}]
+2020-12-18 17:48:08,894 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-12-18 17:48:09,586 WARN org.springframework.boot.actuate.endpoint.EndpointId [restartedMain] Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-12-18 17:48:09,632 WARN org.springframework.boot.actuate.endpoint.EndpointId [restartedMain] Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-12-18 17:48:09,772 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=24d0c216-64c2-358f-8352-3fd36156d4c8
+2020-12-18 17:48:10,326 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8090 (http)
+2020-12-18 17:48:10,332 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-18 17:48:10,332 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-12-18 17:48:10,332 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-18 17:48:10,422 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-12-18 17:48:10,422 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1516 ms
+2020-12-18 17:48:10,535 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-12-18 17:48:10,535 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-18 17:48:10,541 INFO com.netflix.config.DynamicPropertyFactory [restartedMain] DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7ac87f33
+2020-12-18 17:48:11,438 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses Jersey
+2020-12-18 17:48:11,491 INFO org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar [restartedMain] Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2020-12-18 17:48:11,568 WARN org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter [restartedMain] Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-12-18 17:48:11,612 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-12-18 17:48:11,612 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-18 17:48:11,776 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-18 17:48:12,101 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [restartedMain] 
+
+Using generated security password: 14d91e37-2d2e-4991-9192-660dd36d9a3e
+
+2020-12-18 17:48:12,433 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73dd768, org.springframework.security.web.context.SecurityContextPersistenceFilter@57a4f932, org.springframework.security.web.header.HeaderWriterFilter@570bbf22, org.springframework.web.filter.CorsFilter@72ca421d, org.springframework.security.web.authentication.logout.LogoutFilter@78d59460, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@38d2b662, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30356d8d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16faed3b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b99e6dd, org.springframework.security.web.session.SessionManagementFilter@2a4151bd, org.springframework.security.web.access.ExceptionTranslationFilter@692ed9c8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@29ae67f7]
+2020-12-18 17:48:12,489 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2020-12-18 17:48:12,523 WARN org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger [restartedMain] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-18 17:48:12,753 INFO org.springframework.cloud.netflix.zuul.ZuulFilterInitializer [restartedMain] Starting filter initializer
+2020-12-18 17:48:12,762 WARN org.springframework.cloud.security.oauth2.SpringCloudSecurityAutoConfiguration [restartedMain] All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2020-12-18 17:48:12,815 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 20 endpoint(s) beneath base path '/actuator'
+2020-12-18 17:48:12,880 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2020-12-18 17:48:12,901 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2020-12-18 17:48:12,928 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON encoding codec LegacyJacksonJson
+2020-12-18 17:48:12,929 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON decoding codec LegacyJacksonJson
+2020-12-18 17:48:13,057 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML encoding codec XStreamXml
+2020-12-18 17:48:13,058 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML decoding codec XStreamXml
+2020-12-18 17:48:13,162 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2020-12-18 17:48:13,185 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2020-12-18 17:48:13,186 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2020-12-18 17:48:13,186 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2020-12-18 17:48:13,186 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2020-12-18 17:48:13,186 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2020-12-18 17:48:13,186 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2020-12-18 17:48:13,186 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2020-12-18 17:48:13,244 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2020-12-18 17:48:13,246 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2020-12-18 17:48:13,248 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-18 17:48:13,250 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1608335293250 with initial instances count: 4
+2020-12-18 17:48:13,258 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application SERVICE-ZUUL-SERVER with eureka with status UP
+2020-12-18 17:48:13,258 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1608335293258, current=UP, previous=STARTING]
+2020-12-18 17:48:13,260 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICE-ZUUL-SERVER/host.docker.internal:service-zuul-server:8090: registering service...
+2020-12-18 17:48:13,261 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8090"]
+2020-12-18 17:48:13,282 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-18 17:48:13,282 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICE-ZUUL-SERVER/host.docker.internal:service-zuul-server:8090 - registration status: 204
+2020-12-18 17:48:13,283 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8090
+2020-12-18 17:48:13,414 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootServiceZuulServerApplication in 6.199 seconds (JVM running for 6.875)
+2020-12-18 17:48:13,556 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(3)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-18 17:48:13,556 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2020-12-18 17:48:13,567 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 11 ms
+2020-12-18 17:53:13,188 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-12-18 17:54:00,816 INFO com.micro.zuul.filters.PreTiempoTranscurridofilter [http-nio-8090-exec-2] POST request en rutado http://localhost:8090/api/security/oauth/token
+2020-12-18 17:54:00,903 INFO com.netflix.config.ChainedDynamicProperty$ChainLink [http-nio-8090-exec-2] Flipping property: service-oauth.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-18 17:54:00,923 INFO com.netflix.util.concurrent.ShutdownEnabledTimer [http-nio-8090-exec-2] Shutdown hook installed for: NFLoadBalancer-PingTimer-service-oauth
+2020-12-18 17:54:00,923 INFO com.netflix.loadbalancer.BaseLoadBalancer [http-nio-8090-exec-2] Client: service-oauth instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-oauth,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-12-18 17:54:00,927 INFO com.netflix.loadbalancer.DynamicServerListLoadBalancer [http-nio-8090-exec-2] Using serverListUpdater PollingServerListUpdater
+2020-12-18 17:54:00,947 INFO com.netflix.config.ChainedDynamicProperty$ChainLink [http-nio-8090-exec-2] Flipping property: service-oauth.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-18 17:54:00,948 INFO com.netflix.loadbalancer.DynamicServerListLoadBalancer [http-nio-8090-exec-2] DynamicServerListLoadBalancer for client service-oauth initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-oauth,current list of Servers=[host.docker.internal:9100],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:host.docker.internal:9100;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Wed Dec 31 18:00:00 CST 1969;	First connection made: Wed Dec 31 18:00:00 CST 1969;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@289ceef6
+2020-12-18 17:54:00,960 WARN org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand [http-nio-8090-exec-2] The Hystrix timeout of 20000ms for the command service-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-12-18 17:54:01,933 INFO com.netflix.config.ChainedDynamicProperty$ChainLink [PollingServerListUpdater-0] Flipping property: service-oauth.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-18 17:54:02,037 INFO com.micro.zuul.filters.PostTiempoTranscurridofilter [http-nio-8090-exec-2] Entrando a post
+2020-12-18 17:54:02,038 INFO com.micro.zuul.filters.PostTiempoTranscurridofilter [http-nio-8090-exec-2] Tiempo Transcurrido en segundos:  1.222
+2020-12-18 17:58:13,190 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-12-18 18:01:48,768 INFO com.micro.zuul.filters.PreTiempoTranscurridofilter [http-nio-8090-exec-5] POST request en rutado http://localhost:8090/api/security/oauth/token
+2020-12-18 18:01:48,769 WARN org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand [http-nio-8090-exec-5] The Hystrix timeout of 20000ms for the command service-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-12-18 18:01:48,971 INFO com.micro.zuul.filters.PostTiempoTranscurridofilter [http-nio-8090-exec-5] Entrando a post
+2020-12-18 18:01:48,972 INFO com.micro.zuul.filters.PostTiempoTranscurridofilter [http-nio-8090-exec-5] Tiempo Transcurrido en segundos:  0.203
+2020-12-18 18:02:26,917 INFO com.micro.zuul.filters.PreTiempoTranscurridofilter [http-nio-8090-exec-6] POST request en rutado http://localhost:8090/api/security/oauth/token
+2020-12-18 18:02:26,919 WARN org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand [http-nio-8090-exec-6] The Hystrix timeout of 20000ms for the command service-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-12-18 18:02:27,113 INFO com.micro.zuul.filters.PostTiempoTranscurridofilter [http-nio-8090-exec-6] Entrando a post
+2020-12-18 18:02:27,113 INFO com.micro.zuul.filters.PostTiempoTranscurridofilter [http-nio-8090-exec-6] Tiempo Transcurrido en segundos:  0.196
+2020-12-18 18:03:13,191 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-12-18 18:06:19,403 INFO com.micro.zuul.filters.PreTiempoTranscurridofilter [http-nio-8090-exec-10] GET request en rutado http://localhost:8090/api/product/product/listar
+2020-12-18 18:06:19,431 INFO com.netflix.config.ChainedDynamicProperty$ChainLink [http-nio-8090-exec-10] Flipping property: service-products.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-18 18:06:19,432 INFO com.netflix.util.concurrent.ShutdownEnabledTimer [http-nio-8090-exec-10] Shutdown hook installed for: NFLoadBalancer-PingTimer-service-products
+2020-12-18 18:06:19,432 INFO com.netflix.loadbalancer.BaseLoadBalancer [http-nio-8090-exec-10] Client: service-products instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-products,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-12-18 18:06:19,433 INFO com.netflix.loadbalancer.DynamicServerListLoadBalancer [http-nio-8090-exec-10] Using serverListUpdater PollingServerListUpdater
+2020-12-18 18:06:19,434 INFO com.netflix.config.ChainedDynamicProperty$ChainLink [http-nio-8090-exec-10] Flipping property: service-products.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-18 18:06:19,435 INFO com.netflix.loadbalancer.DynamicServerListLoadBalancer [http-nio-8090-exec-10] DynamicServerListLoadBalancer for client service-products initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-products,current list of Servers=[host.docker.internal:60033],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:host.docker.internal:60033;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Wed Dec 31 18:00:00 CST 1969;	First connection made: Wed Dec 31 18:00:00 CST 1969;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@28188923
+2020-12-18 18:06:19,438 WARN org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand [http-nio-8090-exec-10] The Hystrix timeout of 20000ms for the command service-products is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-12-18 18:06:19,672 INFO com.micro.zuul.filters.PostTiempoTranscurridofilter [http-nio-8090-exec-10] Entrando a post
+2020-12-18 18:06:19,672 INFO com.micro.zuul.filters.PostTiempoTranscurridofilter [http-nio-8090-exec-10] Tiempo Transcurrido en segundos:  0.269
+2020-12-18 18:06:20,435 INFO com.netflix.config.ChainedDynamicProperty$ChainLink [PollingServerListUpdater-0] Flipping property: service-products.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-18 18:07:43,659 INFO com.micro.zuul.filters.PreTiempoTranscurridofilter [http-nio-8090-exec-3] GET request en rutado http://localhost:8090/api/item/item/listar
+2020-12-18 18:07:43,681 INFO com.netflix.config.ChainedDynamicProperty$ChainLink [http-nio-8090-exec-3] Flipping property: service-item.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-18 18:07:43,682 INFO com.netflix.util.concurrent.ShutdownEnabledTimer [http-nio-8090-exec-3] Shutdown hook installed for: NFLoadBalancer-PingTimer-service-item
+2020-12-18 18:07:43,682 INFO com.netflix.loadbalancer.BaseLoadBalancer [http-nio-8090-exec-3] Client: service-item instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-item,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-12-18 18:07:43,683 INFO com.netflix.loadbalancer.DynamicServerListLoadBalancer [http-nio-8090-exec-3] Using serverListUpdater PollingServerListUpdater
+2020-12-18 18:07:43,684 INFO com.netflix.config.ChainedDynamicProperty$ChainLink [http-nio-8090-exec-3] Flipping property: service-item.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-18 18:07:43,685 INFO com.netflix.loadbalancer.DynamicServerListLoadBalancer [http-nio-8090-exec-3] DynamicServerListLoadBalancer for client service-item initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-item,current list of Servers=[host.docker.internal:8006],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:host.docker.internal:8006;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Wed Dec 31 18:00:00 CST 1969;	First connection made: Wed Dec 31 18:00:00 CST 1969;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@6248abc7
+2020-12-18 18:07:43,688 WARN org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand [http-nio-8090-exec-3] The Hystrix timeout of 20000ms for the command service-item is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-12-18 18:07:43,983 INFO com.micro.zuul.filters.PostTiempoTranscurridofilter [http-nio-8090-exec-3] Entrando a post
+2020-12-18 18:07:43,984 INFO com.micro.zuul.filters.PostTiempoTranscurridofilter [http-nio-8090-exec-3] Tiempo Transcurrido en segundos:  0.324
+2020-12-18 18:07:44,686 INFO com.netflix.config.ChainedDynamicProperty$ChainLink [PollingServerListUpdater-0] Flipping property: service-item.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-18 18:08:13,192 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-12-18 18:13:13,194 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-12-18 18:18:13,196 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-12-18 18:20:50,393 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(41)-127.0.0.1] Application shutdown requested.
+2020-12-18 18:20:50,394 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(41)-127.0.0.1] Unregistering application SERVICE-ZUUL-SERVER with eureka with status DOWN
+2020-12-18 18:20:50,394 ERROR com.netflix.discovery.DiscoveryClient$3 [RMI TCP Connection(41)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1608337250394, current=DOWN, previous=UP]
+2020-12-18 18:20:50,394 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICE-ZUUL-SERVER/host.docker.internal:service-zuul-server:8090: registering service...
+2020-12-18 18:20:50,397 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8090"]
+2020-12-18 18:20:50,397 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICE-ZUUL-SERVER/host.docker.internal:service-zuul-server:8090 - registration status: 204
+2020-12-18 18:20:50,420 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] Stopping service [Tomcat]
+2020-12-18 18:20:50,423 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-12-18 18:20:50,430 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@14.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@14.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:20:50,431 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:20:50,432 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] The web application [ROOT] appears to have started a thread named [expiringMap-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:20:50,433 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] The web application [ROOT] appears to have started a thread named [RibbonApacheHttpClientConfiguration.connectionManagerTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/java.lang.Object.wait(Native Method)
+ java.base@14.0.2/java.util.TimerThread.mainLoop(Timer.java:553)
+ java.base@14.0.2/java.util.TimerThread.run(Timer.java:506)
+2020-12-18 18:20:50,433 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] The web application [ROOT] appears to have started a thread named [NFLoadBalancer-PingTimer-service-oauth] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/java.lang.Object.wait(Native Method)
+ java.base@14.0.2/java.util.TimerThread.mainLoop(Timer.java:553)
+ java.base@14.0.2/java.util.TimerThread.run(Timer.java:506)
+2020-12-18 18:20:50,434 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@14.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:20:50,435 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] The web application [ROOT] appears to have started a thread named [DataPublisher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:20:50,435 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] The web application [ROOT] appears to have started a thread named [RxComputationScheduler-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:20:50,436 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] The web application [ROOT] appears to have started a thread named [HystrixTimer-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@14.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:20:50,437 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:20:50,437 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] The web application [ROOT] appears to have started a thread named [HystrixTimer-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@14.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:20:50,438 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] The web application [ROOT] appears to have started a thread named [HystrixTimer-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@14.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:20:50,438 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] The web application [ROOT] appears to have started a thread named [RibbonApacheHttpClientConfiguration.connectionManagerTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/java.lang.Object.wait(Native Method)
+ java.base@14.0.2/java.util.TimerThread.mainLoop(Timer.java:553)
+ java.base@14.0.2/java.util.TimerThread.run(Timer.java:506)
+2020-12-18 18:20:50,439 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] The web application [ROOT] appears to have started a thread named [NFLoadBalancer-PingTimer-service-products] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/java.lang.Object.wait(Native Method)
+ java.base@14.0.2/java.util.TimerThread.mainLoop(Timer.java:553)
+ java.base@14.0.2/java.util.TimerThread.run(Timer.java:506)
+2020-12-18 18:20:50,440 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] The web application [ROOT] appears to have started a thread named [RxComputationScheduler-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:20:50,440 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] The web application [ROOT] appears to have started a thread named [HystrixTimer-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@14.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:20:50,441 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] The web application [ROOT] appears to have started a thread named [RibbonApacheHttpClientConfiguration.connectionManagerTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/java.lang.Object.wait(Native Method)
+ java.base@14.0.2/java.util.TimerThread.mainLoop(Timer.java:553)
+ java.base@14.0.2/java.util.TimerThread.run(Timer.java:506)
+2020-12-18 18:20:50,441 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] The web application [ROOT] appears to have started a thread named [NFLoadBalancer-PingTimer-service-item] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/java.lang.Object.wait(Native Method)
+ java.base@14.0.2/java.util.TimerThread.mainLoop(Timer.java:553)
+ java.base@14.0.2/java.util.TimerThread.run(Timer.java:506)
+2020-12-18 18:20:50,442 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] The web application [ROOT] appears to have started a thread named [RxComputationScheduler-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:20:50,443 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] The web application [ROOT] appears to have started a thread named [HystrixTimer-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@14.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:20:50,443 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8090"]
+2020-12-18 18:20:50,463 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(41)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8090"]
+2020-12-18 18:20:50,464 INFO com.netflix.loadbalancer.PollingServerListUpdater$LazyHolder$2 [Thread-13] Shutting down the Executor Pool for PollingServerListUpdater
+2020-12-18 18:20:50,464 INFO org.springframework.cloud.netflix.zuul.ZuulFilterInitializer [RMI TCP Connection(41)-127.0.0.1] Stopping filter initializer
+2020-12-18 18:20:50,467 INFO com.netflix.util.concurrent.ShutdownEnabledTimer [RMI TCP Connection(41)-127.0.0.1] Shutdown hook removed for: NFLoadBalancer-PingTimer-service-products
+2020-12-18 18:20:50,468 INFO com.netflix.util.concurrent.ShutdownEnabledTimer [RMI TCP Connection(41)-127.0.0.1] Exception caught (might be ok if at shutdown)
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:242)
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70)
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:632)
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:883)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:339)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:273)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:979)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:93)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:170)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:979)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:20:50,471 INFO com.netflix.util.concurrent.ShutdownEnabledTimer [RMI TCP Connection(41)-127.0.0.1] Shutdown hook removed for: NFLoadBalancer-PingTimer-service-item
+2020-12-18 18:20:50,471 INFO com.netflix.util.concurrent.ShutdownEnabledTimer [RMI TCP Connection(41)-127.0.0.1] Exception caught (might be ok if at shutdown)
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:242)
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70)
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:632)
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:883)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:339)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:273)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:979)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:93)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:170)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:979)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:20:50,472 INFO com.netflix.util.concurrent.ShutdownEnabledTimer [RMI TCP Connection(41)-127.0.0.1] Shutdown hook removed for: NFLoadBalancer-PingTimer-service-oauth
+2020-12-18 18:20:50,473 INFO com.netflix.util.concurrent.ShutdownEnabledTimer [RMI TCP Connection(41)-127.0.0.1] Exception caught (might be ok if at shutdown)
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:242)
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70)
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:632)
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:883)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:339)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:273)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:979)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:93)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:170)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:979)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:20:50,476 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [RMI TCP Connection(41)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-18 18:20:50,568 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(41)-127.0.0.1] Shutting down DiscoveryClient ...
+2020-12-18 18:20:53,571 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(41)-127.0.0.1] Unregistering ...
+2020-12-18 18:20:53,585 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(41)-127.0.0.1] DiscoveryClient_SERVICE-ZUUL-SERVER/host.docker.internal:service-zuul-server:8090 - deregister  status: 200
+2020-12-18 18:20:53,601 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(41)-127.0.0.1] Completed shut down of DiscoveryClient
+2020-12-18 18:22:09,765 INFO org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
+2020-12-18 18:22:10,653 INFO org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=service-zuul-server, profiles=[default], label=null, version=7c7d0557ebf1f9fdcc32ba587d42925bba28d17d, state=null
+2020-12-18 18:22:10,654 INFO org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/batuzai25/config-microservicios.git/application.properties'}]
+2020-12-18 18:22:10,665 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-12-18 18:22:11,353 WARN org.springframework.boot.actuate.endpoint.EndpointId [restartedMain] Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-12-18 18:22:11,399 WARN org.springframework.boot.actuate.endpoint.EndpointId [restartedMain] Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-12-18 18:22:11,536 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=24d0c216-64c2-358f-8352-3fd36156d4c8
+2020-12-18 18:22:12,100 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8090 (http)
+2020-12-18 18:22:12,113 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-18 18:22:12,114 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-12-18 18:22:12,114 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-18 18:22:12,202 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-12-18 18:22:12,203 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1527 ms
+2020-12-18 18:22:12,309 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-12-18 18:22:12,309 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-18 18:22:12,315 INFO com.netflix.config.DynamicPropertyFactory [restartedMain] DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3a4b46a8
+2020-12-18 18:22:13,187 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses Jersey
+2020-12-18 18:22:13,245 INFO org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar [restartedMain] Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2020-12-18 18:22:13,322 WARN org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter [restartedMain] Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-12-18 18:22:13,358 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-12-18 18:22:13,358 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-18 18:22:13,522 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-18 18:22:13,823 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [restartedMain] 
+
+Using generated security password: f92daacd-8274-40cf-8fbf-b6d4998ad21a
+
+2020-12-18 18:22:13,978 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@351d6f2e, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c458746, org.springframework.security.web.header.HeaderWriterFilter@30af8c33, org.springframework.web.filter.CorsFilter@6bf0f71, org.springframework.security.web.authentication.logout.LogoutFilter@6869b7bf, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@384f1d28, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ff063d2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44a4804c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7000358a, org.springframework.security.web.session.SessionManagementFilter@45d93ece, org.springframework.security.web.access.ExceptionTranslationFilter@36ae4449, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@736af520]
+2020-12-18 18:22:14,027 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2020-12-18 18:22:14,059 WARN org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger [restartedMain] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-18 18:22:14,283 INFO org.springframework.cloud.netflix.zuul.ZuulFilterInitializer [restartedMain] Starting filter initializer
+2020-12-18 18:22:14,292 WARN org.springframework.cloud.security.oauth2.SpringCloudSecurityAutoConfiguration [restartedMain] All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2020-12-18 18:22:14,342 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 20 endpoint(s) beneath base path '/actuator'
+2020-12-18 18:22:14,405 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2020-12-18 18:22:14,424 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2020-12-18 18:22:14,450 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON encoding codec LegacyJacksonJson
+2020-12-18 18:22:14,450 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON decoding codec LegacyJacksonJson
+2020-12-18 18:22:14,564 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML encoding codec XStreamXml
+2020-12-18 18:22:14,564 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML decoding codec XStreamXml
+2020-12-18 18:22:14,664 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2020-12-18 18:22:14,687 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2020-12-18 18:22:14,687 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2020-12-18 18:22:14,687 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2020-12-18 18:22:14,687 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2020-12-18 18:22:14,687 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2020-12-18 18:22:14,687 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2020-12-18 18:22:14,688 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2020-12-18 18:22:14,745 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2020-12-18 18:22:14,746 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2020-12-18 18:22:14,748 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-18 18:22:14,750 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1608337334750 with initial instances count: 4
+2020-12-18 18:22:14,758 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application SERVICE-ZUUL-SERVER with eureka with status UP
+2020-12-18 18:22:14,758 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1608337334758, current=UP, previous=STARTING]
+2020-12-18 18:22:14,759 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICE-ZUUL-SERVER/host.docker.internal:service-zuul-server:8090: registering service...
+2020-12-18 18:22:14,761 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8090"]
+2020-12-18 18:22:14,781 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICE-ZUUL-SERVER/host.docker.internal:service-zuul-server:8090 - registration status: 204
+2020-12-18 18:22:14,782 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-18 18:22:14,783 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8090
+2020-12-18 18:22:14,910 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootServiceZuulServerApplication in 5.923 seconds (JVM running for 6.588)
+2020-12-18 18:22:16,570 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(3)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-18 18:22:16,570 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2020-12-18 18:22:16,581 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 11 ms
+2020-12-18 18:23:27,017 INFO com.micro.zuul.filters.PreTiempoTranscurridofilter [http-nio-8090-exec-1] POST request en rutado http://localhost:8090/api/security/oauth/token
+2020-12-18 18:23:27,099 INFO com.netflix.config.ChainedDynamicProperty$ChainLink [http-nio-8090-exec-1] Flipping property: service-oauth.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-18 18:23:27,115 INFO com.netflix.util.concurrent.ShutdownEnabledTimer [http-nio-8090-exec-1] Shutdown hook installed for: NFLoadBalancer-PingTimer-service-oauth
+2020-12-18 18:23:27,116 INFO com.netflix.loadbalancer.BaseLoadBalancer [http-nio-8090-exec-1] Client: service-oauth instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-oauth,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-12-18 18:23:27,119 INFO com.netflix.loadbalancer.DynamicServerListLoadBalancer [http-nio-8090-exec-1] Using serverListUpdater PollingServerListUpdater
+2020-12-18 18:23:27,134 INFO com.netflix.config.ChainedDynamicProperty$ChainLink [http-nio-8090-exec-1] Flipping property: service-oauth.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-18 18:23:27,135 INFO com.netflix.loadbalancer.DynamicServerListLoadBalancer [http-nio-8090-exec-1] DynamicServerListLoadBalancer for client service-oauth initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-oauth,current list of Servers=[host.docker.internal:9100],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:host.docker.internal:9100;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Wed Dec 31 18:00:00 CST 1969;	First connection made: Wed Dec 31 18:00:00 CST 1969;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@54e83d6e
+2020-12-18 18:23:27,147 WARN org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand [http-nio-8090-exec-1] The Hystrix timeout of 20000ms for the command service-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-12-18 18:23:27,460 INFO com.micro.zuul.filters.PostTiempoTranscurridofilter [http-nio-8090-exec-1] Entrando a post
+2020-12-18 18:23:27,461 INFO com.micro.zuul.filters.PostTiempoTranscurridofilter [http-nio-8090-exec-1] Tiempo Transcurrido en segundos:  0.444
+2020-12-18 18:23:28,122 INFO com.netflix.config.ChainedDynamicProperty$ChainLink [PollingServerListUpdater-0] Flipping property: service-oauth.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-18 18:27:14,689 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-12-18 18:31:56,683 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(20)-127.0.0.1] Application shutdown requested.
+2020-12-18 18:31:56,685 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(20)-127.0.0.1] Unregistering application SERVICE-ZUUL-SERVER with eureka with status DOWN
+2020-12-18 18:31:56,685 ERROR com.netflix.discovery.DiscoveryClient$3 [RMI TCP Connection(20)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1608337916685, current=DOWN, previous=UP]
+2020-12-18 18:31:56,686 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICE-ZUUL-SERVER/host.docker.internal:service-zuul-server:8090: registering service...
+2020-12-18 18:31:56,692 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(20)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8090"]
+2020-12-18 18:31:56,692 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICE-ZUUL-SERVER/host.docker.internal:service-zuul-server:8090 - registration status: 204
+2020-12-18 18:31:56,717 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(20)-127.0.0.1] Stopping service [Tomcat]
+2020-12-18 18:31:56,720 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(20)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-12-18 18:31:56,726 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(20)-127.0.0.1] The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@14.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@14.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:31:56,727 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(20)-127.0.0.1] The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:31:56,728 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(20)-127.0.0.1] The web application [ROOT] appears to have started a thread named [expiringMap-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:31:56,728 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(20)-127.0.0.1] The web application [ROOT] appears to have started a thread named [RibbonApacheHttpClientConfiguration.connectionManagerTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/java.lang.Object.wait(Native Method)
+ java.base@14.0.2/java.util.TimerThread.mainLoop(Timer.java:553)
+ java.base@14.0.2/java.util.TimerThread.run(Timer.java:506)
+2020-12-18 18:31:56,729 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(20)-127.0.0.1] The web application [ROOT] appears to have started a thread named [NFLoadBalancer-PingTimer-service-oauth] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/java.lang.Object.wait(Native Method)
+ java.base@14.0.2/java.util.TimerThread.mainLoop(Timer.java:553)
+ java.base@14.0.2/java.util.TimerThread.run(Timer.java:506)
+2020-12-18 18:31:56,730 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(20)-127.0.0.1] The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:31:56,731 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(20)-127.0.0.1] The web application [ROOT] appears to have started a thread named [DataPublisher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:31:56,731 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(20)-127.0.0.1] The web application [ROOT] appears to have started a thread named [RxComputationScheduler-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:31:56,732 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(20)-127.0.0.1] The web application [ROOT] appears to have started a thread named [HystrixTimer-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@14.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:31:56,733 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(20)-127.0.0.1] The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@14.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:31:56,734 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(20)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8090"]
+2020-12-18 18:31:56,766 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(20)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8090"]
+2020-12-18 18:31:56,767 INFO com.netflix.loadbalancer.PollingServerListUpdater$LazyHolder$2 [Thread-13] Shutting down the Executor Pool for PollingServerListUpdater
+2020-12-18 18:31:56,768 INFO org.springframework.cloud.netflix.zuul.ZuulFilterInitializer [RMI TCP Connection(20)-127.0.0.1] Stopping filter initializer
+2020-12-18 18:31:56,771 INFO com.netflix.util.concurrent.ShutdownEnabledTimer [RMI TCP Connection(20)-127.0.0.1] Shutdown hook removed for: NFLoadBalancer-PingTimer-service-oauth
+2020-12-18 18:31:56,773 INFO com.netflix.util.concurrent.ShutdownEnabledTimer [RMI TCP Connection(20)-127.0.0.1] Exception caught (might be ok if at shutdown)
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:242)
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70)
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:632)
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:883)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:339)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:273)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:979)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:93)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:170)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:979)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:31:56,780 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [RMI TCP Connection(20)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-18 18:31:56,788 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(20)-127.0.0.1] Shutting down DiscoveryClient ...
+2020-12-18 18:31:59,790 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(20)-127.0.0.1] Unregistering ...
+2020-12-18 18:32:03,810 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [RMI TCP Connection(20)-127.0.0.1] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=java.net.ConnectException: Connection refused: no further information stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: no further information
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:170)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:979)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 83 more
+
+2020-12-18 18:32:03,810 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [RMI TCP Connection(20)-127.0.0.1] Request execution failed with message: java.net.ConnectException: Connection refused: no further information
+2020-12-18 18:32:07,816 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [RMI TCP Connection(20)-127.0.0.1] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=java.net.ConnectException: Connection refused: no further information stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: no further information
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:170)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:979)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 84 more
+
+2020-12-18 18:32:07,817 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [RMI TCP Connection(20)-127.0.0.1] Request execution failed with message: java.net.ConnectException: Connection refused: no further information
+2020-12-18 18:32:07,817 ERROR com.netflix.discovery.DiscoveryClient [RMI TCP Connection(20)-127.0.0.1] DiscoveryClient_SERVICE-ZUUL-SERVER/host.docker.internal:service-zuul-server:8090 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:170)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:979)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:32:07,834 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(20)-127.0.0.1] Completed shut down of DiscoveryClient
+2020-12-18 18:38:55,674 INFO org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
+2020-12-18 18:38:56,545 INFO org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=service-zuul-server, profiles=[default], label=null, version=7c7d0557ebf1f9fdcc32ba587d42925bba28d17d, state=null
+2020-12-18 18:38:56,546 INFO org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration [restartedMain] Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/batuzai25/config-microservicios.git/application.properties'}]
+2020-12-18 18:38:56,557 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-12-18 18:38:57,266 WARN org.springframework.boot.actuate.endpoint.EndpointId [restartedMain] Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-12-18 18:38:57,311 WARN org.springframework.boot.actuate.endpoint.EndpointId [restartedMain] Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-12-18 18:38:57,454 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=24d0c216-64c2-358f-8352-3fd36156d4c8
+2020-12-18 18:38:57,996 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8090 (http)
+2020-12-18 18:38:58,002 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8090"]
+2020-12-18 18:38:58,002 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-12-18 18:38:58,002 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-18 18:38:58,091 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-12-18 18:38:58,091 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1522 ms
+2020-12-18 18:38:58,197 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-12-18 18:38:58,197 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-18 18:38:58,203 INFO com.netflix.config.DynamicPropertyFactory [restartedMain] DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@409b2723
+2020-12-18 18:38:59,082 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses Jersey
+2020-12-18 18:38:59,135 INFO org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar [restartedMain] Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2020-12-18 18:38:59,217 WARN org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter [restartedMain] Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-12-18 18:38:59,253 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-12-18 18:38:59,253 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-18 18:38:59,424 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-18 18:38:59,732 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [restartedMain] 
+
+Using generated security password: ff14fc43-0a48-4d85-8742-97ef6cef4d26
+
+2020-12-18 18:38:59,876 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73dd768, org.springframework.security.web.context.SecurityContextPersistenceFilter@57a4f932, org.springframework.security.web.header.HeaderWriterFilter@570bbf22, org.springframework.web.filter.CorsFilter@72ca421d, org.springframework.security.web.authentication.logout.LogoutFilter@78d59460, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@38d2b662, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30356d8d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16faed3b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b99e6dd, org.springframework.security.web.session.SessionManagementFilter@2a4151bd, org.springframework.security.web.access.ExceptionTranslationFilter@692ed9c8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@29ae67f7]
+2020-12-18 18:38:59,932 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2020-12-18 18:38:59,971 WARN org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger [restartedMain] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-12-18 18:39:00,203 INFO org.springframework.cloud.netflix.zuul.ZuulFilterInitializer [restartedMain] Starting filter initializer
+2020-12-18 18:39:00,213 WARN org.springframework.cloud.security.oauth2.SpringCloudSecurityAutoConfiguration [restartedMain] All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2020-12-18 18:39:00,270 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 20 endpoint(s) beneath base path '/actuator'
+2020-12-18 18:39:00,335 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2020-12-18 18:39:00,355 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2020-12-18 18:39:00,383 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON encoding codec LegacyJacksonJson
+2020-12-18 18:39:00,383 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON decoding codec LegacyJacksonJson
+2020-12-18 18:39:00,490 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML encoding codec XStreamXml
+2020-12-18 18:39:00,491 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML decoding codec XStreamXml
+2020-12-18 18:39:00,589 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2020-12-18 18:39:00,611 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2020-12-18 18:39:00,611 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2020-12-18 18:39:00,611 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2020-12-18 18:39:00,611 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2020-12-18 18:39:00,612 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2020-12-18 18:39:00,612 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2020-12-18 18:39:00,612 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2020-12-18 18:39:00,669 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2020-12-18 18:39:00,671 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2020-12-18 18:39:00,672 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-18 18:39:00,675 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1608338340674 with initial instances count: 4
+2020-12-18 18:39:00,682 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application SERVICE-ZUUL-SERVER with eureka with status UP
+2020-12-18 18:39:00,682 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1608338340682, current=UP, previous=STARTING]
+2020-12-18 18:39:00,684 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICE-ZUUL-SERVER/host.docker.internal:service-zuul-server:8090: registering service...
+2020-12-18 18:39:00,685 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8090"]
+2020-12-18 18:39:00,705 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICE-ZUUL-SERVER/host.docker.internal:service-zuul-server:8090 - registration status: 204
+2020-12-18 18:39:00,706 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8090 (http) with context path ''
+2020-12-18 18:39:00,707 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8090
+2020-12-18 18:39:00,833 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringbootServiceZuulServerApplication in 5.928 seconds (JVM running for 6.588)
+2020-12-18 18:39:02,371 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(3)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-18 18:39:02,371 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2020-12-18 18:39:02,383 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 12 ms
+2020-12-18 18:40:01,806 INFO com.micro.zuul.filters.PreTiempoTranscurridofilter [http-nio-8090-exec-2] POST request en rutado http://localhost:8090/api/security/oauth/token
+2020-12-18 18:40:01,885 INFO com.netflix.config.ChainedDynamicProperty$ChainLink [http-nio-8090-exec-2] Flipping property: service-oauth.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-18 18:40:01,901 INFO com.netflix.util.concurrent.ShutdownEnabledTimer [http-nio-8090-exec-2] Shutdown hook installed for: NFLoadBalancer-PingTimer-service-oauth
+2020-12-18 18:40:01,902 INFO com.netflix.loadbalancer.BaseLoadBalancer [http-nio-8090-exec-2] Client: service-oauth instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-oauth,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-12-18 18:40:01,906 INFO com.netflix.loadbalancer.DynamicServerListLoadBalancer [http-nio-8090-exec-2] Using serverListUpdater PollingServerListUpdater
+2020-12-18 18:40:01,921 INFO com.netflix.config.ChainedDynamicProperty$ChainLink [http-nio-8090-exec-2] Flipping property: service-oauth.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-18 18:40:01,922 INFO com.netflix.loadbalancer.DynamicServerListLoadBalancer [http-nio-8090-exec-2] DynamicServerListLoadBalancer for client service-oauth initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-oauth,current list of Servers=[host.docker.internal:9100],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:host.docker.internal:9100;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Wed Dec 31 18:00:00 CST 1969;	First connection made: Wed Dec 31 18:00:00 CST 1969;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@6364446c
+2020-12-18 18:40:01,938 WARN org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand [http-nio-8090-exec-2] The Hystrix timeout of 20000ms for the command service-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-12-18 18:40:02,910 INFO com.netflix.config.ChainedDynamicProperty$ChainLink [PollingServerListUpdater-0] Flipping property: service-oauth.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-12-18 18:40:02,915 INFO com.micro.zuul.filters.PostTiempoTranscurridofilter [http-nio-8090-exec-2] Entrando a post
+2020-12-18 18:40:02,915 INFO com.micro.zuul.filters.PostTiempoTranscurridofilter [http-nio-8090-exec-2] Tiempo Transcurrido en segundos:  1.109
+2020-12-18 18:44:00,616 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-12-18 18:45:17,268 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(17)-127.0.0.1] Application shutdown requested.
+2020-12-18 18:45:17,269 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(17)-127.0.0.1] Unregistering application SERVICE-ZUUL-SERVER with eureka with status DOWN
+2020-12-18 18:45:17,269 ERROR com.netflix.discovery.DiscoveryClient$3 [RMI TCP Connection(17)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1608338717269, current=DOWN, previous=UP]
+2020-12-18 18:45:17,270 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICE-ZUUL-SERVER/host.docker.internal:service-zuul-server:8090: registering service...
+2020-12-18 18:45:17,274 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(17)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8090"]
+2020-12-18 18:45:17,274 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICE-ZUUL-SERVER/host.docker.internal:service-zuul-server:8090 - registration status: 204
+2020-12-18 18:45:17,298 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(17)-127.0.0.1] Stopping service [Tomcat]
+2020-12-18 18:45:17,300 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(17)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-12-18 18:45:17,305 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(17)-127.0.0.1] The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@14.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@14.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:45:17,306 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(17)-127.0.0.1] The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:45:17,307 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(17)-127.0.0.1] The web application [ROOT] appears to have started a thread named [expiringMap-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:45:17,307 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(17)-127.0.0.1] The web application [ROOT] appears to have started a thread named [RibbonApacheHttpClientConfiguration.connectionManagerTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/java.lang.Object.wait(Native Method)
+ java.base@14.0.2/java.util.TimerThread.mainLoop(Timer.java:553)
+ java.base@14.0.2/java.util.TimerThread.run(Timer.java:506)
+2020-12-18 18:45:17,308 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(17)-127.0.0.1] The web application [ROOT] appears to have started a thread named [NFLoadBalancer-PingTimer-service-oauth] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/java.lang.Object.wait(Native Method)
+ java.base@14.0.2/java.util.TimerThread.mainLoop(Timer.java:553)
+ java.base@14.0.2/java.util.TimerThread.run(Timer.java:506)
+2020-12-18 18:45:17,309 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(17)-127.0.0.1] The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:45:17,309 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(17)-127.0.0.1] The web application [ROOT] appears to have started a thread named [DataPublisher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:45:17,310 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(17)-127.0.0.1] The web application [ROOT] appears to have started a thread named [RxComputationScheduler-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:45:17,311 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(17)-127.0.0.1] The web application [ROOT] appears to have started a thread named [HystrixTimer-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@14.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:45:17,311 WARN org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(17)-127.0.0.1] The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@14.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@14.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@14.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@14.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
+ java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:45:17,312 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(17)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8090"]
+2020-12-18 18:45:17,339 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(17)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8090"]
+2020-12-18 18:45:17,340 INFO com.netflix.loadbalancer.PollingServerListUpdater$LazyHolder$2 [Thread-13] Shutting down the Executor Pool for PollingServerListUpdater
+2020-12-18 18:45:17,341 INFO org.springframework.cloud.netflix.zuul.ZuulFilterInitializer [RMI TCP Connection(17)-127.0.0.1] Stopping filter initializer
+2020-12-18 18:45:17,343 INFO com.netflix.util.concurrent.ShutdownEnabledTimer [RMI TCP Connection(17)-127.0.0.1] Shutdown hook removed for: NFLoadBalancer-PingTimer-service-oauth
+2020-12-18 18:45:17,344 INFO com.netflix.util.concurrent.ShutdownEnabledTimer [RMI TCP Connection(17)-127.0.0.1] Exception caught (might be ok if at shutdown)
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:242)
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70)
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:632)
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:883)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:339)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:273)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:979)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:93)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:170)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:979)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2020-12-18 18:45:17,349 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [RMI TCP Connection(17)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-18 18:45:17,356 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(17)-127.0.0.1] Shutting down DiscoveryClient ...
+2020-12-18 18:45:20,359 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(17)-127.0.0.1] Unregistering ...
+2020-12-18 18:45:20,366 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(17)-127.0.0.1] DiscoveryClient_SERVICE-ZUUL-SERVER/host.docker.internal:service-zuul-server:8090 - deregister  status: 200
+2020-12-18 18:45:20,381 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(17)-127.0.0.1] Completed shut down of DiscoveryClient
